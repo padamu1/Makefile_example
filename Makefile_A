@@ -1,0 +1,14 @@
+CC	=	gcc
+CFAGS	=	-l
+DEPS	=	function_help.h
+OBJ	=	multiplication.o	subtraction.o	element_division.o	constructor.o	main.o
+EXE	=	gobhagi
+
+%.o:	%.c	$(DEPS)
+		$(CC)	-c	-o	$@	$<	$(CFLAG)
+$(EXE):	$(OBJ)
+	$(CC)	-o	$@	$^
+	$(CC)	$(CFLAGS)	-o	$@	$^
+
+clean:
+	rm	-f	*.o	$(EXE)

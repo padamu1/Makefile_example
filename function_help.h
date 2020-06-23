@@ -1,0 +1,10 @@
+void tablemake();
+void tableclean();
+void subtraction_table();
+void multiplication_table();
+void element_division_table();
+int row;
+int **table1;
+int **table2;
+int **temptable;
+int divide;
